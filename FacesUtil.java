@@ -31,7 +31,7 @@ public class FacesUtil {
 	public static HttpServletRequest getRequest(){
 		return (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
 	}
-	public static void MsgInDialog(String summary, String detail ) {
+	public static void msgInDialog(String summary, String detail ) {
 		RequestContext.getCurrentInstance().showMessageInDialog(new FacesMessage(summary, detail));
 	}
 	public static Object getFlash(String objeto) throws ClassCastException {
